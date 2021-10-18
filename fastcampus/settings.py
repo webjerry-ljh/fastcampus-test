@@ -25,9 +25,7 @@ SECRET_KEY = 'django-insecure-2x+vbf-0j&6i$nl^$ceb=c42$8@5*4rtt!066i#a&ofaen@26j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-52-78-6-209.ap-northeast-2.compute.amazonaws.com',
-                 'elb-test-973953496.ap-northeast-2.elb.amazonaws.com',
-                 'alb-test.jerry-poc.link']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +40,7 @@ INSTALLED_APPS = [
     'order',
     'boss',
     'delivery',
+    'user',
     'rest_framework'
 ]
 
